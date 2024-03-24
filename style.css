@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background:  url("./picture/star1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 630px;
+}
+
+header .content{
+    padding-top: 250px;
+    color: white;
+}
+
+header{
+    text-align: center;
+}
+
+
+.box_size_container{
+    padding-top: 50px;
+    width:70%;
+    margin: 0 auto;
+  }
+  .iconbox-top.md-align-center {
+    text-align: center;
+  }
+  .iconbox-top .iconbox-top-content {
+      display: inline-block;
+      max-width: 700px;
+  }
+  .iconbox-top .icon-holder {    
+      position: relative;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 15px;  
+      height: 100px;
+      width: 100px;
+  }
+  .iconbox-top .svg-circle{
+    position: absolute;
+    width:100px;
+    height:100px;
+    display:block;
+    z-index:0;
+  }
+  .iconbox-top .description{
+    padding-bottom: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: normal;
+    width: 75%;
+    color: rgba(94,94,94,0.7);
+    
+  }
+  .iconbox-top .svg-circle{
+    opacity:0;
+  }
+  .iconbox-top .svg-circle circle{
+    stroke-dasharray: 360;
+    stroke-dashoffset:360px;
+  }
+  .iconbox-top .hover-holder:hover .svg-circle circle
+  {  
+    animation: dashIn 0.6s linear forwards ;  
+  }
+  .iconbox-top .hover-holder:hover .svg-circle
+  {  
+    opacity:1;  
+  }
+  
+  .iconbox-top .hover-holder:not(:hover) .svg-circle circle
+  {  
+    animation: dashOut 0.6s ease ;
+  }
+  .iconbox-top .hover-holder:not(:hover) .svg-circle
+  {  
+    opacity:0.3;  
+  }
+  .iconbox-top .hover-holder:hover .icon{
+    animation: iconIn 0.3s linear forwards;
+  }
+  .iconbox-top .hover-holder:not(:hover) .icon{
+    animation: iconOut 0.3s ease;
+  }
+  
+  @keyframes dashIn{
+    from{
+      stroke-dashoffset:360;
+    }
+    to{
+      stroke-dashoffset:1;
+    }
+  }
+  @keyframes dashOut {
+    from {
+      stroke-dashoffset: 0;
+    }
+    to {
+      stroke-dashoffset: 360;
+    }
+  }
+  @keyframes iconIn {
+    0%{   
+      font-size:42px;
+    }
+    100%{     
+      font-size:38px;
+    }
+  }
+  @keyframes iconOut {
+    0%{
+      font-size:38px;
+    }
+    100%{
+      font-size:42px;
+    }
+  }
+  
+  .iconbox-top .icon {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      -webkit-transform: translateY(-50%) translateX(50%);
+      font-size: 42px;
+      z-index: 1;
+      -webkit-backface-visibility: hidden;
+  }
+
+.bb p{
+  text-align: right;
+}
+
+.ribbon{
+  background-color: red;
+}
+
+li{
+  list-style: none;
+}
+
+footer{
+  padding: 50px;
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+}
